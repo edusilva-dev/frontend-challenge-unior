@@ -1,0 +1,91 @@
+/*
+
+    White: #FFF;
+    Cultured: #F6F6F6;
+    Almond: #F5E5D9;
+    Eerie Black: #272727;
+    Black: #000
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-top{
+    top: 0%;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--cultured);
+    z-index: 1000;
+}
+
+.navbar{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.nav-links a{
+    transition: all .2s ease-out;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover{
+    transition: all .3s ease-out;
+    border-bottom: 5px solid var(--eerie);
+}
+
+.nav-links ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+.nav-links li{
+    height: 100%;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1em;
+    transition: all .3s ease-out;
+}
+
+.nav-icons{
+    margin: 10px;
+    margin-right: 40px;
+}
+
+.nav-icons i:hover{
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.6);
+    border-radius: 50%;
+    transition: all .3s linear;
+    font-weight: bold;
+}
+
+.nav-icons i{
+    padding: 5px;
+}
+
+.nav-icons a{
+    color: black;
+}
